@@ -1,0 +1,5 @@
+import Image from 'next/image';
+import { PageIntro } from '@/components/page-intro';
+import { ContactForm } from '@/components/contact-form';
+export const metadata={title:'Contact Demo'};
+export default function ContactPage(){return <><PageIntro label="LET’S CONNECT" title="Good ideas start" accent="with a conversation." description="Try the demonstration form. No information is sent or stored, and the contact details shown here are fictional."/><section className="section"><div className="container-wide contact-layout"><ContactForm/><aside className="contact-details"><div className="contact-photo"><Image src="/assets/synthetic/nova-7.webp" alt="Fictional robot Nova-7" fill sizes="(max-width: 767px) 90vw, 45vw" className="cover-image"/></div><span className="eyebrow">A FICTIONAL DIGITAL STUDIO</span><h2>Curiosity without borders.</h2><div className="office"><h3>Virtual collaboration</h3><p>This concept website has no physical office or live contact service.</p></div><p>hello@example.com · Placeholder email</p></aside></div></section></>}

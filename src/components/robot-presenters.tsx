@@ -1,0 +1,3 @@
+import Image from 'next/image';
+import { presenters } from '@/data/presenters';
+export function RobotPresenters(){return <div className="robot-grid">{presenters.map(p=><article className="robot-card" key={p.name}><Image src={`/assets/synthetic/${p.image}.webp`} alt={`AI-generated portrait of fictional robot ${p.name}`} width={1024} height={1024} sizes="(max-width: 767px) 90vw, 45vw" quality={95}/><div className="robot-card__body"><span className="eyebrow">FICTIONAL PRESENTER</span><h3>{p.name}</h3><strong>{p.role}</strong><p>{p.description}</p><span className="robot-email">{p.email}</span></div></article>)}</div>}

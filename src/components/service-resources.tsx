@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { SectionHeading } from '@/components/sections';
+export function ServiceResources({service}:{service:'edi'|'cleo'}){return <section className="section"><div className="container-wide"><SectionHeading label="CONCEPT EXPLORATION" title="Imagine what comes next." description={`Explore a fictional perspective on ${service==='edi'?'data exchange':'connected platforms'}.`}/><Link className="button button--primary" href="/innovation-lab">Visit the innovation lab →</Link></div></section>}

@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { PageIntro } from '@/components/page-intro';
+import { RobotPresenters } from '@/components/robot-presenters';
+export const metadata={title:'Innovation Lab'};
+export default function InnovationLab(){return <><PageIntro label="GLOBAL SYSTEM / CONCEPT LAB" title="A little imagination." accent="A new perspective." description="Meet two imagined minds exploring a more connected future. This synthetic showcase replaces our photo gallery."/><section className="section"><div className="container-wide"><div className="demo-notice">Design demonstration · All robot identities and portraits are fictional. Email addresses are placeholders.</div><RobotPresenters/><div className="lab-note"><span className="eyebrow">BUILT TO EXPLORE</span><h2>Ideas that connect the dots.</h2><p>From workflow automation to thoughtful data exchange, our lab imagines how technology can make everyday work simpler.</p><Link className="button button--primary" href="/webinar">Explore the demo session →</Link></div></div></section></>}
